@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- fontawsome link -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- my css links -->
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <button class="btn transBtn" id="translateBtn">AR/EN</button>
+
+      <div class="login-card">
+        <div class="login-header">
+          <h2 data-key="login">Sign In</h2>
+        </div>
+
+        <form class="login-form" id="loginForm" novalidate>
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+              <label for="email" data-key="email">Email Address</label>
+            </div>
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="input-wrapper password-wrapper">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                autocomplete="current-password"
+              />
+              <label for="password" data-key="password">Password</label>
+            </div>
+            <span class="error-message" id="passwordError"></span>
+          </div>
+
+          <button type="submit" class="btn">
+            <span class="btn-text" data-key="login">Sign In</span>
+            <span class="btn-loader"></span>
+          </button>
+        </form>
+
+        <div class="signup-link">
+          <p>
+            <span data-key="signUpLink">Don't have an account?</span>
+            <a href="/register.html" data-key="create">Create one</a>
+          </p>
+          <!-- <p >
+            Don't have an account?
+            <a href="/register.html" data-key="create">Create one</a>
+          </p> -->
+        </div>
+
+        <div class="success-message" id="successMessage">
+          <div class="success-icon">✓</div>
+          <h3>Login Successful!</h3>
+          <p>Redirecting to your dashboard...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/translate.js"></script>
+    <script type="module" src="./js/login.js"></script>
+  </body>
+</html>

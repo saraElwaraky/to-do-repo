@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- fontawsome link -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- my css links -->
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <button class="btn transBtn" id="translateBtn">AR/EN</button>
+      <div class="login-card">
+        <div class="login-header">
+          <h2 data-key="registerTitle">Sign Up</h2>
+        </div>
+
+        <form class="login-form" id="registerForm" novalidate>
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                required
+                id="register-fName"
+                name="fName"
+                required
+              />
+              <label for="fName" data-key="firstName">First Name</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                required
+                id="register-lName"
+                name="lName"
+                required
+              />
+              <label for="lName" data-key="lastName">Last Name</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="register-email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+              <label for="email" data-key="email">Email Address</label>
+            </div>
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="input-wrapper password-wrapper">
+              <input
+                type="password"
+                id="register-password"
+                name="password"
+                required
+                data-key="password"
+                autocomplete="new-password"
+              />
+              <label for="password" data-key="password">Password</label>
+            </div>
+            <span class="error-message" id="passwordError"></span>
+          </div>
+          <div class="form-group">
+            <div class="input-wrapper password-wrapper">
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+                autocomplete="new-password"
+              />
+              <label for="confirmPassword" data-key="confirmPassword"
+                >Confirm Password</label
+              >
+            </div>
+            <span class="error-message" id="confirmPasswordError"></span>
+          </div>
+
+          <button type="submit" data-key="signUp" class="btn">
+            <span class="btn-text">Sign up</span>
+            <span class="btn-loader"></span>
+          </button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+          <div class="success-icon">✓</div>
+          <h3 data-key="successMsg">sign up Successful!</h3>
+          <p data-key="successP">Redirecting to your dashbord...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/translate.js"></script>
+    <script type="module" src="./js/register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- fontawsome link -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- my css links -->
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <button class="btn transBtn" id="translateBtn">AR/EN</button>
+
+      <div class="main-header"></div>
+      <div class="todo-card">
+        <div class="todo-header">
+          <h2 data-key="todoTitle">
+            My To Do List <i class="fa-solid fa-list"></i>
+          </h2>
+          <span class="user-name" id="userName"></span>
+          <button class="logout-btn" data-key="logOut" id="logoutBtn">
+            Logout <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </div>
+        <div class="todo-input">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="Add a new task..."
+            data-placeholder-key="addPlcHold"
+          />
+          <button id="addBtn">
+            <span data-key="addTaskBtn" class="btn-text">Add</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="tasks-container">
+          <ul id="todo-list">
+            <!-- <li class="checked">Heloo</li>
+            <li>c mc,zczc</li>
+            <li>sdckkmnzdc</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/translate.js"></script>
+    <script type="module" src="./js/todo.js"></script>
+  </body>
+</html>
